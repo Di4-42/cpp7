@@ -1,21 +1,25 @@
 #include "iter.hpp"
 
-void printInt(int& x) {
+void printInt(int& x)
+{
     std::cout << x << " ";
 }
 
-void printString(std::string& s) {
+void printString(std::string& s)
+{
     std::cout << s << " ";
 }
 
-void increment(int& x) {
+void increment(int& x) 
+{
     x++;
 }
 
-int main() {
+int main()
+{
 
     int arr[] = {1, 2, 3, 4, 5};
-    size_t len = 5;
+    int len = 5;
 
     std::cout << "Original ints: ";
     iter(arr, len, printInt);

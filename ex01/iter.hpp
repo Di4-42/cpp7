@@ -1,6 +1,7 @@
 #pragma once
 
 #include <iostream>
+#include <string>
 
 template <typename T>
 void iter(T* array, const int length, void (*func)(T&))
