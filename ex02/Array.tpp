@@ -5,7 +5,7 @@ Array<T>::Array() : _data(0), _size(0)
 }
 
 template <typename T>
-Array<T>::Array(unsigned int n) : _data(new T[n]()), _size(n)
+Array<T>::Array(unsigned int n) : _data(new T[n]()), _size(n). // allocation with new[]
 {
     std::cout << "Array off " << n << " elements created" << std::endl;
 }

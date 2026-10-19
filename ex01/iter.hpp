@@ -2,11 +2,12 @@
 
 #include <iostream>
 #include <string>
+#include <exception>
 
 template <typename T>
 void iter(T* array, const int length, void (*func)(T&))
 {
-    for (int i = 0; i < length; ++i)
+    for (int i = 0; i < length; ++i)  // call la fonction recu sur chaque element
         func(array[i]);
 }
 

@@ -2,6 +2,7 @@
 
 #include <iostream>
 #include <string>
+#include <exception>
 
 template <typename T> // T est un paramètre représentant un type
 void	swap(T& a, T& b) // utilise ce type
